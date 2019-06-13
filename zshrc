@@ -130,8 +130,10 @@ alias desktop="cd ~/Desktop; clear; ls"
 alias norm="cd ~/projects/project_docs_PDFs; open norme.en.pdf"
 alias gnlpdf="cd ~/projects/project_docs_PDFs; open get_next_line.en.pdf"
 alias libftpdf="cd ~/projects/project_docs_PDFs; open libft.en.pdf"
+alias printfpdf="cd ~/projects/project_docs_PDFs; open ft_printf.en.pdf"
 
 #Misc
-alias na="cd; vi .zshrc"
+alias na="cd ~/dotfiles/; vim zshrc"
+alias vimrc="cd ~/dotfiles/; vim vimrc"
 alias gcc="gcc -Wall -Wextra -Werror -g"
 alias src="cd; source .zshrc"

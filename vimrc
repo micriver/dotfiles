@@ -1,3 +1,10 @@
+nmap 0 ^
+
+let mapleader = "\<Space>"
+
+nmap <leader>vr :vsplit $MYVIMRC<cr>
+nmap <leader>so :source $MYVIMRC<cr>
+
 set number " shows line numbers
 syntax on
 set ruler " shows column numbers
@@ -11,4 +18,4 @@ set undolevels=1000 " remember a lot more undos
 set statusline=\ %<%l:%v\ [%p]%=%a\ %h%m%r\ %F\
 " set listchars=tab:┊-
 " set list
-" colorscheme jellybeans
+colorscheme jellybeans
