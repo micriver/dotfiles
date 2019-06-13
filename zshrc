@@ -1,8 +1,10 @@
+ZSH_DISABLE_COMPFIX=true
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/michaelrivera/.oh-my-zsh"
+export ZSH="/nfs/2018/m/mirivera/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -118,7 +120,8 @@ alias mirror="bash ~/Dual_git_push_v02.sh"
 alias libft="cd ~/projects/libft_00; ls"
 alias gnl="cd ~/projects/get_next_line_00/get_next_line3; ls"
 alias hercules="cd ~/projects/hercules; ls"
-alias fillit="cd ~/42_projects/fillit; ls"
+alias fillit="cd ~/projects/fillit; ls"
+alias printf="cd ~/projects/ft_printf; ls"
 
 #Navigation
 alias desktop="cd ~/Desktop; clear; ls"
