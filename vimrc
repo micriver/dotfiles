@@ -7,7 +7,7 @@ nmap <leader>so :source $MYVIMRC<cr>
 " nmap <leader>soz :source ~/dotfiles/zshrc<cr>
 
 imap jk <esc>:w<cr>
-imap kj <esc>
+imap kj <esc>:w<cr>
 
 set number " shows line numbers
 syntax on
