@@ -121,19 +121,21 @@ alias libft="cd ~/projects/libft_00; ls"
 alias gnl="cd ~/projects/get_next_line_00/get_next_line3; ls"
 alias hercules="cd ~/projects/hercules; ls"
 alias fillit="cd ~/projects/fillit; ls"
-alias printf="cd ~/projects/ft_printf; ls"
+alias ft_printf="cd ~/projects/ft_printf; ls"
 
 #Navigation
 alias desktop="cd ~/Desktop; clear; ls"
+alias dotfiles="git add ~/dotfiles/*; git commit -m "."; git push origin master"
 
-#PDFs
-alias norm="cd ~/projects/project_docs_PDFs; open norme.en.pdf"
-alias gnlpdf="cd ~/projects/project_docs_PDFs; open get_next_line.en.pdf"
-alias libftpdf="cd ~/projects/project_docs_PDFs; open libft.en.pdf"
-alias printfpdf="cd ~/projects/project_docs_PDFs; open ft_printf.en.pdf"
+#Open PDFs
+alias norm="open ~/projects/project_docs_PDFs/norme.en.pdf"
+alias gnlpdf="open ~/projects/project_docs_PDFs/get_next_line.en.pdf"
+alias libftpdf="open ~/projects/project_docs_PDFs/libft.en.pdf"
+alias printfpdf="open ~/projects/project_docs_PDFs/ft_printf.en.pdf"
+alias fillitpdf="open ~/projects/project_docs_PDFs/fillit.en.pdf"
 
 #Misc
-alias na="cd ~/dotfiles/; vim zshrc"
-alias vimrc="cd ~/dotfiles/; vim vimrc"
+alias na="vim ~/dotfiles/zshrc"
+alias vr="vim ~/dotfiles/vimrc"
 alias gcc="gcc -Wall -Wextra -Werror -g"
 alias src="cd; source .zshrc"

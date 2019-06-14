@@ -4,6 +4,10 @@ let mapleader = "\<Space>"
 
 nmap <leader>vr :vsplit $MYVIMRC<cr>
 nmap <leader>so :source $MYVIMRC<cr>
+" nmap <leader>soz :source ~/dotfiles/zshrc<cr>
+
+imap jk <esc>:w<cr>
+imap kj <esc>
 
 set number " shows line numbers
 syntax on
@@ -19,3 +23,10 @@ set statusline=\ %<%l:%v\ [%p]%=%a\ %h%m%r\ %F\
 " set listchars=tab:┊-
 " set list
 colorscheme jellybeans
+" colorscheme onehalfdark 
+
+" if exists('+termguicolors')
+"   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+"   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+"   set termguicolors
+" endif
