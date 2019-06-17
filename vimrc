@@ -8,6 +8,7 @@ nmap <leader>so :source $MYVIMRC<cr>
 
 imap jk <esc>:w<cr>
 imap kj <esc>:w<cr>
+" imap <C-s> <esc>:w<cr>
 
 set number " shows line numbers
 syntax on
@@ -15,9 +16,11 @@ set ruler " shows column numbers
 set showmatch " show matching parenthesis
 set mouse=a "lets you use the mouse
 set linebreak " doesn't break words up
+set scrolloff=4 " keep at least 4 lines below cursor
 set laststatus=2
 set history=1000 " remember a lot more commands and search history
 set undolevels=1000 " remember a lot more undos
+set nobackup " no swap files in project dirs
 " set display=lastline
 set statusline=\ %<%l:%v\ [%p]%=%a\ %h%m%r\ %F\
 " set listchars=tab:┊-
