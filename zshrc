@@ -125,7 +125,7 @@ alias ft_printf="cd ~/projects/ft_printf; ls"
 
 #Navigation
 alias desktop="cd ~/Desktop; clear; ls"
-alias dotfiles="cd ~/dotfiles/; git add .; git commit -m "."; git push origin master"
+alias dotfiles="bash ~/dotfiles/update.sh"
 
 #Open PDFs
 alias norm="open ~/projects/project_docs_PDFs/norme.en.pdf"
