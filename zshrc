@@ -74,7 +74,7 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+git
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -117,11 +117,13 @@ alias mirror="bash ~/Dual_git_push_v02.sh"
 # alias mirror="git add .; read -p "Commit description: " desc; git commit -m "$desc"; git push origin mirror; echo 'Fuck yeah...'"
 
 #Project Navigation
-alias libft="cd ~/projects/libft_00; ls"
-alias gnl="cd ~/projects/get_next_line_00/get_next_line3; ls"
+alias libft="cd ~/projects/libft2-0; ls"
+alias gnl="cd ~/projects/get_next_line/get_next_line3; ls"
 alias hercules="cd ~/projects/hercules; ls"
 alias fillit="cd ~/projects/fillit; ls"
-alias ft_printf="cd ~/projects/ft_printf; ls"
+alias ft_printf="cd ~/projects/ft_printf_project/ft_printf2; ls"
+alias b_printf="cd ~/projects/b_printf; ls"
+alias md5="cd ~/projects/ssl_md5; ls"
 
 #Navigation
 alias desktop="cd ~/Desktop; clear; ls"
@@ -133,9 +135,14 @@ alias gnlpdf="open ~/projects/project_docs_PDFs/get_next_line.en.pdf"
 alias libftpdf="open ~/projects/project_docs_PDFs/libft.en.pdf"
 alias printfpdf="open ~/projects/project_docs_PDFs/ft_printf.en.pdf"
 alias fillitpdf="open ~/projects/project_docs_PDFs/fillit.en.pdf"
+alias md5pdf="open ~/projects/project_docs_PDFs/ft_ssl_md5.en.pdf"
 
 #Misc
 alias na="vim ~/dotfiles/zshrc"
 alias vr="vim ~/dotfiles/vimrc"
 alias gcc="gcc -Wall -Wextra -Werror -g"
 alias src="cd; source .zshrc"
+
+mkdir -p /tmp/.$(whoami)-brew-locks
+export PATH="$HOME/.brew/bin:$PATH"
+export PATH="$HOME/.gem/ruby/2.5.0/bin:$PATH"
