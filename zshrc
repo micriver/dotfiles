@@ -10,10 +10,15 @@ export ZSH="/nfs/2018/m/mirivera/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+# ZSH_THEME="spaceship"
+ZSH_THEME="alanpeabody"
 # ZSH_THEME="powerlevel9k/powerlevel9k"
 # POWERLEVEL9K_MODE="nerdfont-complete"
 
+# SPACESHIP_PROMPT_ADD_NEWLINE=false
+# SPACESHIP_PROMPT_SEPARATE_LINE=true
+# SPACESHIP_USER_SHOW="true"
 # POWERLEVEL9K_DISABLE_RPROMPT=true
 # POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 # POWERLEVEL9K_TIME_FOREGROUND='red'
@@ -50,7 +55,8 @@ ZSH_THEME="robbyrussell"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
+
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -121,9 +127,9 @@ alias libft="cd ~/projects/libft2-0; ls"
 alias gnl="cd ~/projects/get_next_line/get_next_line3; ls"
 alias hercules="cd ~/projects/hercules; ls"
 alias fillit="cd ~/projects/fillit; ls"
-alias ft_printf="cd ~/projects/ft_printf_project/ft_printf2; ls"
+alias ftprintf="cd ~/projects/ft_printf_project/ft_printf2; ls"
 alias b_printf="cd ~/projects/b_printf; ls"
-alias md5="cd ~/projects/ssl_md5; ls"
+alias ssl="cd ~/projects/ssl; ls"
 
 #Navigation
 alias desktop="cd ~/Desktop; clear; ls"
