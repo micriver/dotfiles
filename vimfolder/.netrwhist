@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/nfs/2018/m/mirivera/piscine/day01/ex02/find_sh.sh'
+let g:netrw_dirhist_2='/Volumes/Storage/goinfre/mirivera/chford/ex01'
+let g:netrw_dirhist_3='/nfs/2018/m/mirivera/Desktop/.git'
+let g:netrw_dirhist_4='/nfs/2018/m/mirivera/projects/libft/.git'
+let g:netrw_dirhist_5='/nfs/2018/m/mirivera/Desktop/libft_2/.git'
+let g:netrw_dirhist_6='/nfs/2018/m/mirivera/projects/fillit/.git'
+let g:netrw_dirhist_7='/nfs/2018/m/mirivera/projects/ft_printf/srcs'
+let g:netrw_dirhist_8='/nfs/2018/m/mirivera/projects/ft_printf/headers'
+let g:netrw_dirhist_9='/nfs/2018/m/mirivera/projects/ssl_md5/libft'
