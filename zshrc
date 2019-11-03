@@ -130,6 +130,7 @@ alias fillit="cd ~/projects/fillit; ls"
 alias ftprintf="cd ~/projects/ft_printf_project/ft_printf2; ls"
 alias b_printf="cd ~/projects/b_printf; ls"
 alias ssl="cd ~/projects/ssl; ls"
+alias init="cd ~/projects/init; ls"
 
 #Navigation
 alias desktop="cd ~/Desktop; clear; ls"
@@ -142,6 +143,7 @@ alias libftpdf="open ~/projects/project_docs_PDFs/libft.en.pdf"
 alias printfpdf="open ~/projects/project_docs_PDFs/ft_printf.en.pdf"
 alias fillitpdf="open ~/projects/project_docs_PDFs/fillit.en.pdf"
 alias md5pdf="open ~/projects/project_docs_PDFs/ft_ssl_md5.en.pdf"
+alias initpdf="open ~/projects/init/init.en.pdf"
 
 #Misc
 alias na="vim ~/dotfiles/zshrc"

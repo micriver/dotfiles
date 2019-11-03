@@ -54,6 +54,7 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 nnoremap <C-=> <C-w>=
 
+
 execute pathogen#infect()
 filetype plugin indent on
 
