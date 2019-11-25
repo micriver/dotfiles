@@ -1,0 +1,13 @@
+Is it a cadet project or a piscine day?
+    if cadet project, keep what you have so far
+        ask for a language to see if it's c
+            if its c, change libft to not pull the repo but to copy the folder from nfs
+            and do the rest of its stuff
+    if piscine project 
+        ask, what day is it?
+			create and cd into that day directory
+        how many exercises are there in the day?
+        What is the format for the directories
+            Figure out how to count up each time in the script in a file name
+			create that number of directories using that format
+
