@@ -25,6 +25,6 @@ tests.c
 *.py
 *.swp
 *.txt
-*.sh
+# *.sh
 .nfs*
 *.gch
