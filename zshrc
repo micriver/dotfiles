@@ -4,7 +4,7 @@ ZSH_DISABLE_COMPFIX=true
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/nfs/2018/m/mirivera/.oh-my-zsh"
+export ZSH="/Users/michaelrivera/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -130,7 +130,7 @@ alias fillit="cd ~/projects/fillit; ls"
 alias ftprintf="cd ~/projects/ft_printf_project/ft_printf2; ls"
 alias b_printf="cd ~/projects/b_printf; ls"
 alias ssl="cd ~/projects/ssl; ls"
-alias init="cd ~/projects/init; ls"
+alias init="cd ~/42_projects/init; ls"
 
 #Navigation
 alias desktop="cd ~/Desktop; clear; ls"
@@ -154,3 +154,4 @@ alias src="cd; source .zshrc"
 mkdir -p /tmp/.$(whoami)-brew-locks
 export PATH="$HOME/.brew/bin:$PATH"
 export PATH="$HOME/.gem/ruby/2.5.0/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
