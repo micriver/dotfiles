@@ -1,4 +1,5 @@
 #!/bin/bash
+# script automating the creation of a generic website project with common subdirectories
 
 black=`tput setaf 0`
 mint=`tput setaf 10`

@@ -1,4 +1,5 @@
 #!/bin/bash
+# script automating the creation of a generic React App without unnecessary React setup
 
 black=`tput setaf 0`
 mint=`tput setaf 10`
