@@ -22,19 +22,20 @@ else
 	printf "${green}Creating your React App...\n"
 	npx create-react-app $PROJDIR
 	cd $PROJDIR/public
-	rm favicon.ico logo* manifest.json robots.txt
+	rm favicon.ico logo* robots.txt
 	cd ../src
+	mkdir components
 	rm *.css setupTests.js serviceWorker.js App.test.js logo.svg App.js
 	# since the original App.js file was removed, we create a new barebones one with the command below
 	echo "import React from 'react';
 
 	function App() {
 	  return (
-		  null
+		  <h1>Hey Mike</h1>
 	  );
 	}
 
-	export default App;" >> test.js
+	export default App;" >> App.js
 	# remove the original index.js and replace with our own
 	rm index.js
 	echo "import React from 'react';
@@ -47,4 +48,9 @@ else
 	  </React.StrictMode>,
 	  document.getElementById('root')
 	);" >> index.js
+	# asking if we'd like to open the project in vsc:
+	# read -p "Would you like to clone your libft? [y/n] " ret
+    #                     #echo ""
+    #                     if      [ ${#1} == 1 ] && [ "$ret" = "y" ] || [ "$ret" = "Y" ]; then
+	code $PROJDIR/
 fi
