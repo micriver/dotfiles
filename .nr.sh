@@ -25,7 +25,7 @@ else
 	rm favicon.ico logo* robots.txt
 	cd ../src
 	mkdir components
-	rm *.css setupTests.js serviceWorker.js App.test.js logo.svg App.js
+	rm setupTests.js serviceWorker.js App.test.js logo.svg App.js
 	# since the original App.js file was removed, we create a new barebones one with the command below
 	echo "import React from 'react';
 
@@ -48,9 +48,10 @@ else
 	  </React.StrictMode>,
 	  document.getElementById('root')
 	);" >> index.js
-	# asking if we'd like to open the project in vsc:
-	# read -p "Would you like to clone your libft? [y/n] " ret
-    #                     #echo ""
-    #                     if      [ ${#1} == 1 ] && [ "$ret" = "y" ] || [ "$ret" = "Y" ]; then
+	# # asking if we'd like to open the project in vsc:
+	# # read -p "Would you like to clone your libft? [y/n] " ret
+    # #                     #echo ""
+    # #                     if      [ ${#1} == 1 ] && [ "$ret" = "y" ] || [ "$ret" = "Y" ]; then
+	cd ../
 	code $PROJDIR/
 fi

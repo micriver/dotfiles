@@ -35,7 +35,8 @@ else
 				do
 					#read -p "Please provide a valid git repository for your libft: " lib
 					echo ""
-					git clone https://github.com/micriver/libft-2.0.git libft;
+					git clone --recurse-submodules https://github.com/micriver/libft-2.0.git libft;
+					# git clone https://github.com/micriver/libft-2.0.git libft;
 					if [ -d "libft" ]; then
 						break ;
 					fi
