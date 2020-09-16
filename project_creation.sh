@@ -34,6 +34,7 @@ else
 				while [ 1 ]
 				do
 					#read -p "Please provide a valid git repository for your libft: " lib
+					# https://git-scm.com/book/en/v2/Git-Tools-Submodules
 					echo ""
 					git clone --recurse-submodules https://github.com/micriver/libft-2.0.git libft;
 					# git clone https://github.com/micriver/libft-2.0.git libft;
