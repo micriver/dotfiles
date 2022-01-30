@@ -152,6 +152,11 @@ alias gcc="gcc -Wall -Wextra -Werror -g"
 alias src="cd; source .zshrc"
 
 mkdir -p /tmp/.$(whoami)-brew-locks
+# line directly below for pip error
+export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.8/bin"
 export PATH="$HOME/.brew/bin:$PATH"
 export PATH="$HOME/.gem/ruby/2.5.0/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/flutter/bin:$PATH"
+PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
+export PATH
