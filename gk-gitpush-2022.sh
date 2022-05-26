@@ -15,16 +15,16 @@ bold=`tput bold`
 # tput sgr0 turns off all attributes
 NC=`tput sgr0`
 
-PACKAGE=~/Documents/projects/GK-CMS-3.0/package-lock.json
-YARN=~/Documents/projects/GK-CMS-3.0/yarn.lock.json
+PACKAGE=$(pwd)/package-lock.json
+YARN=$(pwd)/yarn.lock
 
-# check for args 
+check for args 
 if [ $# -eq 0 ]; then
     echo "Please provide a commit message"
     exit 1
 fi
 
-# create string from all args after command
+create string from all args after command
 str="'$*'"
 
 if [[ -f "$PACKAGE" && -f "$YARN" ]]; then
