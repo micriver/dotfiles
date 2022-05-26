@@ -13,7 +13,8 @@ bold=`tput bold`
 # tput sgr0 turns off all attributes
 NC=`tput sgr0`
 
-FILE=~/Documents/projects/GK-CMS-3.0/package-lock.json
+PACKAGE=~/Documents/projects/GK-CMS-3.0/package-lock.json
+YARN=~/Documents/projects/GK-CMS-3.0/yarn.lock.json
 # if num args is > 1, the args are specific files to add then ask for commit message to assign to arg
 # if [[ "$#" -gt 1 ]]; then
 if [ $# -eq 0 ]; then
@@ -36,18 +37,19 @@ fi
     # If there is one more arg after the commit message, then that is treated as the branch for the repo
     if [[ "$2" ]]; then
         # sync the package-lock file with your yarn file for every push 
-        if [[ -f "$FILE" ]]; then
-            echo "$FILE exists."
+        echo "You're pushing two files"
+        if [[ -f "$PACKAGE" && -f "$YARN" ]]; then
+            echo "$PACKAGE and $YARN files exist."
             synp --source-file yarn.lock
         fi
         git add .;
         git commit -m "$1";
-        git push origin $2;
+        git push --set-upstream origin $2;
         git show
     else
     # if num args is just one, that's a commit message
-        if [[ -f "$FILE" ]]; then
-            echo "$FILE exists."
+        if [[ -f "$PACKAGE" && -f "$YARN" ]]; then
+            echo "$PACKAGE and $YARN files exist."
             synp --source-file yarn.lock
         fi
         git add .;
