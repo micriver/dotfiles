@@ -18,13 +18,13 @@ NC=`tput sgr0`
 PACKAGE=$(pwd)/package-lock.json
 YARN=$(pwd)/yarn.lock
 
-check for args 
+# check for args 
 if [ $# -eq 0 ]; then
     echo "Please provide a commit message"
     exit 1
 fi
 
-create string from all args after command
+# create string from all args after command
 str="'$*'"
 
 if [[ -f "$PACKAGE" && -f "$YARN" ]]; then
