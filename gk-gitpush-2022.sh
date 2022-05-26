@@ -28,6 +28,7 @@ fi
 str="'$*'"
 
 if [[ -f "$PACKAGE" && -f "$YARN" ]]; then
+    echo "$PACKAGE and $YARN files exist."
     synp --force --source-file yarn.lock
 fi
 git add .;
