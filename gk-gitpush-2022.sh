@@ -33,5 +33,5 @@ if [[ -f "$PACKAGE" && -f "$YARN" ]]; then
 fi
 git add .;
 git commit -m "$str";
-git push;
+git push --set-upstream $(git remote) $(git branch --show-current);
 git show
