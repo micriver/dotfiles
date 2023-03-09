@@ -118,7 +118,7 @@ source $ZSH/oh-my-zsh.sh
 alias 42FileChecker="bash ~/42FileChecker/42FileChecker.sh"
 
 #Git Commands
-alias gg="git add .; git commit -m "."; git push origin master"
+# alias gg="git add .; git commit -m "."; git push origin master"
 alias mirror="bash ~/Dual_git_push_v02.sh"
 # alias mirror="git add .; read -p "Commit description: " desc; git commit -m "$desc"; git push origin mirror; echo 'Fuck yeah...'"
 
@@ -150,6 +150,19 @@ alias na="vim ~/dotfiles/zshrc"
 alias vr="vim ~/dotfiles/vimrc"
 alias gcc="gcc -Wall -Wextra -Werror -g"
 alias src="cd; source .zshrc"
+
+# gk additions 2023 ===============
+alias gg="sh ~/dotfiles/gk-gitpush-2022.sh"
+alias create_branch='sh ~/dotfiles/create_branch.sh'
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# react native android stuff:
+export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+# ===============================
 
 mkdir -p /tmp/.$(whoami)-brew-locks
 # line directly below for pip error
